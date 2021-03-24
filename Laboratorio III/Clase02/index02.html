@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase02 - Formularios</title>
+</head>
+<body>
+    <!-- Label -->
+    <!-- Input -->
+    <!-- Seleccion -->
+    <!-- Button -->
+    <h1>Formularios</h1>
+    <form method="GET">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" id="txtNombre" name="nombre" required><br>
+        <hr>
+        <label for="txtEdad">Edad:</label>
+        <input type="number" id="txtEdad" min="18" max="99" name="edad"><br>
+        <hr>
+        <label for="txtPassword">Password:</label>
+        <input type="password" id="txtPassword" name="password"><br>
+        <hr>
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" name="email" autocomplete="off"><br>
+        <hr>
+        <input type="color" name="Color" id="">
+        <hr>
+        <input type="file" name="Archivo" id="">
+        <hr>
+        <progress></progress>
+        <hr>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="txtSexo" id="">Masculino
+            <input type="radio" name="txtSexo" id="">Femenino
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Deportes</legend>
+            <input type="checkbox" name="deporte" id="" value="N">Natacion
+            <input type="checkbox" name="deporte" id="" value="C">Ciclismo
+        </fieldset>
+        <hr>
+        <label for="Localidad">Localidad</label>
+        <select name="localidad" id="Localidad">
+            <optgroup label="NorteAmerica">
+                <option value="a">Canada</option>
+            </optgroup>
+            <optgroup label="SurAmerica">
+                <option value="b">Paraguay</option>
+                <option value="c">Argentina</option>
+                <option value="d">Brasil</option>
+            </optgroup>
+        </select>
+        <hr>
+        <label for="lenguajes">Lenguajes de Programacion</label>
+        <input type="list" list="lenguajes">
+        <datalist id="lenguajes">
+            <option value="Lenguaje Uno"></option>
+            <option value="Lenguaje Dos"></option>
+            <option value="Lenguaje Tres"></option>
+        </datalist>
+        <hr>
+        <img src="Screenshot_5.png" alt="Una Imagen Random">
+        <hr>
+        <input type="reset" value="Reseteando">
+        <hr>
+        <input type="submit" value="Enviar Input - Se envia form">
+    </form>
+</body>
+</html>

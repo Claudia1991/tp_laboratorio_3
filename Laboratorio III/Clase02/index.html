@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 - CSS</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+            text-align: center;
+        }
+
+        tbody>tr:nth-child(1) {
+            background-color: chartreuse;
+        }
+
+        
+
+        col:nth-child(1) {
+            background-color: blue;
+            color: darkorange;
+        }
+
+        col:nth-child(2) {
+            background-color: red;
+            color: darkorange;
+        }
+
+        .etiquetaDiv{
+            color: darkred;
+        }
+
+        .mayuscula{
+            text-transform:  uppercase;
+            color: darkviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <hr>
+    <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Visual Basic</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Visual Basic</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>
+            Holassss
+        </dt>
+        <dd>Mundooos</dd>
+    </dl>
+    <hr>
+    <h2>Tablas Comunes</h2>
+    <table border="1px">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Claudia</td>
+            <td>Jara</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Cinthia</td>
+            <td>Lopez</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Tablas Complejas I</h2>
+    <table border="1px">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="2">C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1px">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2">D</td>
+            <td>E</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Tablas Complejas II</h2>
+    <table border="1px">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <caption class="mayuscula">Alumnos</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Claudia</td>
+                <td>Jara</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>Jara</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer</td>
+                <td>Footer</td>
+                <td>Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <div class="etiquetaDiv">
+        <p><span class="mayuscula">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero aliquid nulla laboriosam soluta quia quo ullam tempore. Quod, voluptatem, repellendus consequuntur maiores temporibus dicta minus voluptates nesciunt quae fugit pariatur?</span><span>Iste accusantium at corrupti? Culpa doloribus quaerat, commodi perferendis repellendus sit fugit velit animi consectetur impedit facere laudantium pariatur odio vero. Architecto illum nihil eligendi vero officia velit, veniam dolorem?</span><span>Optio maxime tempore pariatur voluptatibus, unde doloremque numquam ducimus rerum consequuntur debitis labore alias eveniet quos beatae temporibus explicabo iste quo a cum officia quia cupiditate eum inventore? Ducimus, similique?</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur, a iure quidem optio nostrum reprehenderit unde mollitia aspernatur eos ipsa deleniti! Reiciendis natus ipsa rerum, iure velit tenetur qui.</span><span>Ipsam architecto est neque quisquam molestiae provident officia, eaque asperiores nesciunt magni alias. Mollitia cum reprehenderit sed magnam quia officiis ex delectus esse sequi amet minus optio, exercitationem debitis sapiente!</span><span>Animi quas accusantium dolore voluptas assumenda corporis pariatur labore, expedita magnam eius. Nostrum reprehenderit quam quos ipsam, sed optio tempora voluptates, labore atque voluptatibus veniam possimus ipsa, accusantium consequuntur natus!</span></p>
+    </div>
+</body>
+
+</html>
