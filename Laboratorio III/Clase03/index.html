@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03</title>
+</head>
+<body>
+    <h1>Clase 03</h1>
+
+    <details>
+        <summary>Lenguaje Programacion</summary>
+        <h2>JavaScript</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, sunt quis. Vel voluptates laborum unde quia culpa fugiat accusantium nemo, voluptatibus architecto, suscipit, fugit consectetur. Dicta ab quo quis repudiandae.</p>
+    </details>
+
+    <dialog id="modal">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, tenetur expedita, ea inventore corporis consequatur, dolores labore et quasi sapiente voluptate veniam quam doloremque in debitis quisquam ipsum mollitia quaerat?</p>
+        <button onclick="cerrarModal()">Cerrar Modal</button>
+    </dialog>
+
+    <button onclick="abrirModal()">Abrir Modal</button>
+    <script>
+        function cerrarModal(){
+            var elemento = document.getElementById("modal");
+            elemento.removeAttribute("open");
+        }
+
+        function abrirModal(){
+            var elemento = document.getElementById("modal");
+            elemento.setAttribute("open", true);
+        }
+    </script>
+</body>
+</html>
