@@ -98,9 +98,7 @@ class Reportes{
     apellido.*/
     public static function ObtenerUsuariosSegunNombreApellido($nombre, $apellido){
         $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-		$consulta =$objetoAccesoDato->RetornarConsulta("select * from usuario where nombre like '%:nombre%' or apellido like '%:apellido%'");
-        $consulta->bindValue(':nombre',$nombre, PDO::PARAM_STR);
-        $consulta->bindValue(':apellido',$apellido, PDO::PARAM_STR);		
+		$consulta =$objetoAccesoDato->RetornarConsulta("select * from usuario where nombre like '%".$nombre. "%' or apellido like '%" .$apellido ."%'");	
 		$consulta->execute();			
 		return $consulta->fetchAll(PDO::FETCH_OBJ);
 
