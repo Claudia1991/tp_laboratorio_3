@@ -1,36 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 03</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Practica 06</title>
 </head>
+
 <body>
-    <h1>Clase 03</h1>
+    <header>
+        <div class="cabeceraUno">
+            <img src="./images/images/logo.svg" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Anuncios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cabeceraDos">
+            <h1>Venta de casas y departamentos</h1>
+            <h1>exclusivos de lujo</h1>
+        </div>
+    </header>
+    <h2>mas sobre nosotros</h2>
+    <section class="opcionesContenedor">
+        <div class="opciones">
+            <img src="./images/images/icono1.svg" alt="Seguridad">
+            <h3>
+                Seguridad
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid possimus provident mollitia nihil,
+                maxime,
+                minus consequuntur molestias neque excepturi ullam eius cum esse quidem eveniet labore perspiciatis ipsa
+                eligendi tempora?</p>
+        </div>
+        <div class="opciones"><img src="./images/images/icono2.svg" alt="El mejor precio">
+            <h3>
+                El mejor precio
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid possimus provident mollitia nihil,
+                maxime,
+                minus consequuntur molestias neque excepturi ullam eius cum esse quidem eveniet labore perspiciatis ipsa
+                eligendi tempora?</p>
+        </div>
+        <div class="opciones"><img src="./images/images/icono3.svg" alt="A tiempo">
+            <h3>
+                A tiempo
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid possimus provident mollitia nihil,
+                maxime,
+                minus consequuntur molestias neque excepturi ullam eius cum esse quidem eveniet labore perspiciatis ipsa
+                eligendi tempora?</p>
+        </div>
+    </section>
+    <main>
 
-    <details>
-        <summary>Lenguaje Programacion</summary>
-        <h2>JavaScript</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, sunt quis. Vel voluptates laborum unde quia culpa fugiat accusantium nemo, voluptatibus architecto, suscipit, fugit consectetur. Dicta ab quo quis repudiandae.</p>
-    </details>
+        <h2>Casas y deptos en venta</h2>
+        <div class="mainContenedor">
+            <article>
+                <img src="./images/images/anuncio1.jpg" alt="Anuncio uno">
+                <h3>Casa de lujo e el lago</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur repellendus dicta
+                    eveniet
+                    dolore
+                    recusandae. Quo atque rem, quas facilis, eum similique ea illum culpa ipsum expedita quasi, eius
+                    dolore?
+                </p>
+                <p class="precio">UDS 350.000</p>
+                <ul>
+                    <li><img src="./images/images/icono_wc.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_estacionamiento.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_dormitorio.svg" alt="Anuncio baño">
+                        <p>4</p>
+                    </li>
+                </ul>
+                <a class="verPropiedad" href="#">Ver propiedad</a>
+            </article>
 
-    <dialog id="modal">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, tenetur expedita, ea inventore corporis consequatur, dolores labore et quasi sapiente voluptate veniam quam doloremque in debitis quisquam ipsum mollitia quaerat?</p>
-        <button onclick="cerrarModal()">Cerrar Modal</button>
-    </dialog>
+            <article>
+                <img src="./images/images/anuncio2.jpg" alt="Anuncio dos">
+                <h3>Casa terminada de lujo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur repellendus dicta
+                    eveniet
+                    dolore
+                    recusandae. Quo atque rem, quas facilis, eum similique ea illum culpa ipsum expedita quasi, eius
+                    dolore?
+                </p>
+                <p class="precio">UDS 275.000</p>
+                <ul>
+                    <li><img src="./images/images/icono_wc.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_estacionamiento.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_dormitorio.svg" alt="Anuncio baño">
+                        <p>4</p>
+                    </li>
+                </ul>
+                <a class="verPropiedad" href="#">Ver propiedad</a>
+            </article>
 
-    <button onclick="abrirModal()">Abrir Modal</button>
-    <script>
-        function cerrarModal(){
-            var elemento = document.getElementById("modal");
-            elemento.removeAttribute("open");
-        }
+            <article> <img src="./images/images/anuncio3.jpg" alt="Anuncio tres">
+                <h3>Casa con pileta</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur repellendus dicta
+                    eveniet
+                    dolore
+                    recusandae. Quo atque rem, quas facilis, eum similique ea illum culpa ipsum expedita quasi, eius
+                    dolore?
+                </p>
+                <p class="precio">UDS 275.000</p>
+                <ul>
+                    <li><img src="./images/images/icono_wc.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_estacionamiento.svg" alt="Anuncio baño">
+                        <p>3</p>
+                    </li>
+                    <li><img src="./images/images/icono_dormitorio.svg" alt="Anuncio baño">
+                        <p>4</p>
+                    </li>
+                </ul>
+                <a class="verPropiedad" href="#">Ver propiedad</a>
+            </article>
+        </div>
+        <a class="verTodas" href="#">Ver todas</a>
+    </main>
 
-        function abrirModal(){
-            var elemento = document.getElementById("modal");
-            elemento.setAttribute("open", true);
-        }
-    </script>
+    <section class="formulario">
+        <h2>Encuentra la casa de tus sueños</h2>
+        <p>llena el formulario de contacto</p>
+        <a class="verPropiedad" href="#">Contactamos</a>
+    </section>
+
+    <div class="blogs">
+        <section>
+            <h2>Nuestro blog</h2>
+            <article class="blog">
+                <div>
+                    <img src="./images/images/blog1.jpg" alt="Terraza">
+                </div>
+                <div>
+                    <h3>Terraza en el techo de tu casa</h3>
+                <p class="escrito">Escrito el <date>30/03/021</date> por: <span>Admin</span></p>
+                <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero
+                </p>
+                </div>
+            </article>
+    
+            <article class="blog">
+                <div>
+                    <img src="./images/images/blog2.jpg" alt="Terraza">
+                </div>
+                <div>
+                    <h3>Guia para la decoracion de tu hogar</h3>
+                <p class="escrito">Escrito el <date>31/03/021</date> por: <span>Admin</span></p>
+                <p>Maximiza el espacio de tu hora con esta guia. Aprende a combinar los muebles y colores para darle vida a
+                    tu
+                    espacio.</p>
+                </div>
+            </article>
+        </section>
+    
+        <div>
+            <h2>Comentarios</h2>
+            <section class="comentarios">
+                <blockquote>"El personal se comporto de una excelente forma. Buena atencion y la casa que me ofrecieron cumple
+                    mis expectativas. "</blockquote>
+                    <cite>-Juan Perez</cite>
+            </section>
+        </div>
+    </div>
+
+
+    <footer >
+        <p>Todos los derechos reservados<date>2021</date> &copy; </p>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

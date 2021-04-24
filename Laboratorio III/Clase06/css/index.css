@@ -1,39 +1,180 @@
 *{
-    padding:0%;
-    margin:0%;
+    padding:0;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
 }
 
-/* body{
+header {
     display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-} */
+    background-image: url("/images/images/header.jpg");
+    justify-content:space-around;
+    flex-direction:column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+
+header div{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+header h1{
+    color: white;
+    z-index: 999;
+}
+
+.cabeceraUno{
+    margin-top: -100px;
+}
+
+.cabeceraDos{
+    flex-direction:column;
+}
 
 ul {
     list-style-type: none;
     display:flex;
-
+    justify-content: space-around;
 }
 
 ul li a{
     text-decoration:none;
     color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     background-color: gray;
     border: 1px solid slateblue;
-    border-radius: 5px;
+    border-radius: 5px; */
     margin: 5px 10px;
 
 }
-
-.header {
-    display:flex;
-    background-image: url("./images/images/header.jpg");
-    justify-content:space-between;
+h2{
+    text-align: center;
 }
 
-.boton{
+.opcionesContenedor{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+.opciones{
+    border: 1px solid black;
+    margin: 20px 75px;
+    text-align: center;
+    height:300px;
+    width:300px;
+}
+
+section div > img,h3,p {
+    margin: 10px 10px;
+}
+
+.mainContenedor{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+main h2{
+    text-align: center;
+}
+
+main article{
+    border: 1px solid gray;
+    height:600px;
+    width:400px;
+    margin: 10px 30px;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+
+main article img{
+    width:400px;
+    height: 300px;
+}
+
+
+article img{
+    width:290px;
+    height: 190px;
+}
+
+ul li img {
+    width:50px;
+    height: 50px;
+}
+
+.verPropiedad{
     background-color: orange;
     color: white;
-    border-radius: 5px;
+    border: 1px solid orange;
+    text-decoration:none;
+    padding: 10px 20px;
+}
+
+.precio{
+    color: green;
+}
+
+.verTodas{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border: 1px solid green;
+    background-color: green;
+    position: relative;
+    left: 90%;
+    top:20px;
+}
+
+.formulario{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: 100px 0px;
+    background-image: url("/images/images/encuentra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.blogs{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.blog{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 200px;
+    width: 90%;
+}
+
+.comentarios{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 300px;
+    font-size: 20px;
+    width: 500px;
+}
+
+footer{
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.escrito{
+    color:green;
 }
