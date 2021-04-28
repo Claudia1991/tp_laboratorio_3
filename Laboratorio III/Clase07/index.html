@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 07 - Arrays</title>
+</head>
+<body>
+    <script>
+        const arrayRaro = new Array();
+
+        const arrayStandard = [
+            10, false, "Hola", ["Hola", "mundo"]
+        ];
+
+        const arrayObjet = [
+            {nombre:"Perro", edad:12},
+            {nombre:"Perro", edad:12},
+            {nombre:"Perro", edad:12},
+        ];
+
+        console.log(arrayStandard);
+        console.log(arrayObjet);
+
+        arrayRaro.push("Agrega un elemento");
+
+        arrayRaro.pop(); //Elimina el ultimo
+
+        arrayRaro.includes("Hola"); // devuelve si lo que le pasamos por parametro esta o no en el array
+
+        const arrayRelleno = Array(5).fill(1); //metodo fill llena el array con lo que se le pasa por parametro
+
+        const navegacion = ["home","about","contact","login"];
+        navegacion.forEach(function(elemento, index, arrayOriginal){
+            console.log(`<li>${elemento}</li>`);
+        });
+
+        //Spread operator
+        const superiores = ["hombros", "brazos", "torso"];
+        const inferiores = ["caderas", "piernas", "rodillas"];
+        const cuerpo = ["cabeza", superiores, inferiores, "pies"];
+        const cuerpoUno = ["cabeza", ...superiores, ...inferiores, "pies"]; 
+        // en caso de elementos duplicados, se agregan igual, no es recursivo con respecto a array de arrays
+
+        //OBJETOS
+        const persona = {
+            nombre: "Lero",
+            edad: 12
+        }
+
+        function Persona(name, age){
+            let nombre= "Lola";
+            this.edad= 54; //this hace referencia al mismo objeto
+
+            this.getNombre = function(){
+                return nombre;
+            }
+            this.setNombre = function(value){
+                nombre = value;
+            }
+        }
+        Persona.prototype.saludar = function(){
+            console.log(`Hola, soy ${this.getNombre()}`)
+        }
+
+        const personaUno = new Persona();
+
+        personaUno.apellido = "Locura"; // se puede colgar propiedades desde afuera
+
+    </script>
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+</html>
