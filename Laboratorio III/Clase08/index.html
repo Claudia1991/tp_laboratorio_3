@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persona{
+            constructor(nombre, sexo, edad){
+                this._nombre = nombre;
+                this._sexo = sexo;
+                this._edad = edad;
+            }
+
+            set edad(value){
+                this._edad = value;
+            }
+            get edad(){
+                return this._edad;
+            }
+
+            saludar(){
+                return `Hola, me llamo ${this._nombre} y tengo ${this._edad} años.` ;
+            }
+        }
+
+        class Empleado extends Persona{
+            constructor(legajo, nombre, sexo, edad){
+                super(nombre, sexo, edad);
+                this._legajo = legajo;
+            }
+
+            informarLegajo(){
+                return `Tengo el legajo: ${this._legajo} .`
+            }
+
+            saludar(){
+                return super.saludar() + ` y tengo el legajo ${this._legajo}`;
+            }
+        }
+
+        const personaUno = new Persona("Claudia", "Femenino",30);
+        console.log("Persona, ", personaUno);
+        console.log("Funcion saludar: ", personaUno.saludar());
+    </script>
+</body>
+</html>
