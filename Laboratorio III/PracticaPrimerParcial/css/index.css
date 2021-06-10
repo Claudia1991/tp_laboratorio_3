@@ -1,0 +1,11 @@
+h1, h3{
+    text-align: center;
+}
+
+#formulario{
+    text-transform: capitalize;
+}
+
+#espinner{
+    display: none;
+}
