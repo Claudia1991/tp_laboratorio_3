@@ -1,0 +1,13 @@
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+h1, h3{
+    text-align: center;
+}
+
+#formulario{
+    text-transform: capitalize;
+}

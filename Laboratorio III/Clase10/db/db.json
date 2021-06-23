@@ -1,0 +1,19 @@
+{
+    "cocineros":[
+        {
+            "id": 1,
+            "nombre": "Cocinero uno",
+            "especialidad": "Pasta"
+        },
+        {
+            "id": 2,
+            "nombre": "German",
+            "especialidad": "Verduras"
+        },
+        {
+            "id": 3,
+            "nombre": "Damian",
+            "especialidad": "Postres"
+        }
+    ]
+}

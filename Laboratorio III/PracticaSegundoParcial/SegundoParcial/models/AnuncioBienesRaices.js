@@ -1,5 +1,5 @@
 export class AnuncioBienesRaices{
-    constructor(id, titulo, transaccion, descripcion, precio, numeroBanios, numeroEstacionamiento, numeroDormitorios){
+    constructor(titulo, transaccion, descripcion, precio, numeroBanios, numeroEstacionamiento, numeroDormitorios){
         this.titulo = titulo;
         this.transaccion = transaccion;
         this.descripcion = descripcion;
@@ -7,6 +7,9 @@ export class AnuncioBienesRaices{
         this.numeroBanios = numeroBanios;
         this.numeroEstacionamiento = numeroEstacionamiento;
         this.numeroDormitorios = numeroDormitorios;
-        this.id = id;
+    }
+
+    set id(value){
+        this.id = value;
     }
 }

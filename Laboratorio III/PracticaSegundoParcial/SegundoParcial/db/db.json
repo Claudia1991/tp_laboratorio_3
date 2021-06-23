@@ -1,0 +1,24 @@
+{
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "Prueba",
+      "transaccion": "Venta",
+      "descripcion": "Prueba",
+      "precio": 1,
+      "numeroBanios": 1,
+      "numeroEstacionamiento": 1,
+      "numeroDormitorios": 1
+    },
+    {
+      "titulo": "Pruebaadfasdf",
+      "transaccion": "venta",
+      "descripcion": "dfasdfa",
+      "precio": "1",
+      "numeroBanios": "1",
+      "numeroEstacionamiento": "1",
+      "numeroDormitorios": "1",
+      "id": 3
+    }
+  ]
+}

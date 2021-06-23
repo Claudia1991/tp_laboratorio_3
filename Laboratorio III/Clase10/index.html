@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 - XmlHttpRequest</title>
+</head>
+
+<body>
+    <style>
+        .spinner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: burlywood;
+        }
+    </style>
+
+    <button onclick="getCocineros()">Traer datos Ajax</button>
+    <button onclick="getCocinerosFetch()">Traer datos fetch</button>
+    <button onclick="getCocinerosFetchAsync()">Traer datos async / await</button>
+    <div class="spinner">
+
+    </div>
+    <script>
+        //para levantar el json-server -w -d 2000 -p 5000 db.json
+        let data;
+        const createSpinner = () => {
+            const spinner = document.createElement('img');
+            spinner.setAttribute('src', './assets/spinner.gif')
+            spinner.setAttribute('alt', "Imagen Spinner")
+
+            return spinner;
+        }
+
+
+        const getCocineros = () => {
+            document.querySelector('.spinner').appendChild(createSpinner());
+
+            //instanciamos el objeto xmlhttprequest
+            //const getCocineros = (options) => {
+            //const {url, method,success, error} = options;
+            const xhr = new XMLHttpRequest();
+
+            //asignar el handler para la peticion
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState == 4) {
+                    //ya volvio la peticion
+                    //cierro spinner
+                    if (xhr.status >= 200 && xhr.status < 299) {
+                        data = JSON.parse(xhr.responseText);
+                        console.log(data);
+                    } else {
+                        const statusText = xhr.statusText || "Ocurrio un error";
+                        console.log(`Error: ${xhr.status} - ${statusText}`);
+                    }
+                    document.querySelector('.spinner').removeChild(document.querySelector('.spinner').firstElementChild);
+                } else {
+                    //abro spinner
+                }
+            };
+
+            xhr.open("GET", "http://localhost:5000/cocineros");
+
+            xhr.send();
+        }
+
+        const getCocinerosFetch = () => {
+            document.querySelector('.spinner').appendChild(createSpinner());
+            fetch("http://localhost:5000/cocineros")
+            .then((response) =>{
+                return response.ok ? response.json() :  Promise.reject(response.statusText) ;
+            }).then(res => {
+                console.log(res);
+                document.querySelector('.spinner').removeChild(document.querySelector('.spinner').firstElementChild);
+            })
+            .catch((error) => {
+                document.querySelector('.spinner').removeChild(document.querySelector('.spinner').firstElementChild);
+                console.error(error);
+            }).finally(() => {
+                
+            });
+        }
+
+        const getCocinerosFetchAsync = async () => {
+            document.querySelector('.spinner').appendChild(createSpinner());
+            try {
+                const res = await fetch("http://localhost:5000/cocineros");
+                if(!res.ok){
+                    throw new Error("Erroooor");
+                }
+                data = await res.json();
+                console.log(data);
+                document.querySelector('.spinner').removeChild(document.querySelector('.spinner').firstElementChild);
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+
+</html>
