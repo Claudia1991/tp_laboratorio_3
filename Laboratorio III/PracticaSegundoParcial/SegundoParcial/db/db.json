@@ -14,11 +14,51 @@
       "titulo": "Pruebaadfasdf",
       "transaccion": "venta",
       "descripcion": "dfasdfa",
-      "precio": "1",
-      "numeroBanios": "1",
-      "numeroEstacionamiento": "1",
-      "numeroDormitorios": "1",
+      "precio": 1,
+      "numeroBanios": 1,
+      "numeroEstacionamiento": 1,
+      "numeroDormitorios": 1,
       "id": 3
+    },
+    {
+      "titulo": "Prueba uno",
+      "transaccion": "venta",
+      "descripcion": "adfasdf",
+      "precio": 23,
+      "numeroBanios": 23,
+      "numeroEstacionamiento": 23,
+      "numeroDormitorios": 23,
+      "id": 4
+    },
+    {
+      "titulo": "Prueba dos",
+      "transaccion": "venta",
+      "descripcion": "preuba dos",
+      "precio": 45,
+      "numeroBanios": 45,
+      "numeroEstacionamiento": 45,
+      "numeroDormitorios": 45,
+      "id": 5
+    },
+    {
+      "titulo": "asdfsadf",
+      "transaccion": "venta",
+      "descripcion": "asdfasdfasf",
+      "precio": 78,
+      "numeroBanios": 78,
+      "numeroEstacionamiento": 78,
+      "numeroDormitorios": 78,
+      "id": 6
+    },
+    {
+      "titulo": "Pruebaadfasdf",
+      "transaccion": "venta",
+      "descripcion": "asdfasdfasf",
+      "precio": 789,
+      "numeroBanios": 987,
+      "numeroEstacionamiento": 456,
+      "numeroDormitorios": 456,
+      "id": 7
     }
   ]
 }
