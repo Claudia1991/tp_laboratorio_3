@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Segundo Parcial Claudia Jara</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo.jpg" alt="Logo">
+        <nav id="contactos">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contenedor">
+        <h1>Administracion</h1>
+        <img class="imgHeader" src="./assets/LogoHeader.png" alt="Autos">
+        <div id="formulario">
+            <form>
+                <input type="hidden" name="id">
+                <label for="titulo">t&iacutetulo: </label>
+                <input class="form-control" type="text" name="titulo" id="titulo" required placeholder="Titulo">
+                <label for="transaccion">transacci&oacuten: </label>
+                <select class="form-control" name="transaccion" id="transaccion">
+                    <option disabled selected>---Elegir una transaccion---</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select>
+                <label for="descripcion">descripci&oacuten: </label>
+                <input class="form-control" type="text" name="descripcion" id="descripcion" required placeholder="Descripcion">
+                <label for="precio">precio: </label>
+                <input class="form-control" type="number" name="precio" id="precio" required min="1" placeholder="Precio">
+                <div class="caracteristicas">
+                    <label for="puertas">n&uacutemero puertas: </label>
+                    <input class="form-control" type="number" name="puertas" id="puertas" required min="1" placeholder="Numero de puertas">
+                    <label for="km">n&uacutemero km: </label>
+                    <input class="form-control" type="number" name="km" id="km" required min="1" placeholder="Kilometraje">
+                    <label for="potencia">n&uacutemero potencia: </label>
+                    <input class="form-control" type="number" name="potencia" id="potencia" required min="1" placeholder="Potencia">
+                </div>
+                <div class="botonera">
+                    <button id="btnFormulario" class="btn btn-success"><img
+                            src="https://img.icons8.com/small/16/000000/plus.png" />Agregar</button>
+                    <button id="btnEliminar" class="btn btn-danger">Eliminar</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+
+            <h3>Filtros</h3>
+            <form id="formularioFiltros">
+                <label for="tipoFiltro">filtrar por: </label>
+                <select class="form-control" id="tipoFiltro" name="tipoFiltro" required>
+                    <option value="Todos" selected>Todos</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select>
+                <label for="numeroFiltro">promedio de precio: </label>
+                <input type="number" name="numeroFiltro" id="numeroFiltro" class="form-control" required>
+                <button id="aplicarFiltro" class="btn btn-primary">Aplicar filtro</button>
+            </form>
+        </div>
+        <div id="tabla">
+            <div class="spinner col-md-6"></div>
+            <div class="col-md-9">
+                <div class="col-md-12">
+                    <h3>Listado Anuncios Cargados</h3>
+                    <label for="promedioPrecios">promedio de precios historico: </label>
+                    <input type="number" name="promedioPrecios" id="promedioPrecios" class="form-control" disabled>
+                    <div id="tablaAnuncios"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav id="contactos">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Todos los derechos reservados<date>2021</date> &copy; </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+header {
+    height: 50px;
+    background-color:blue;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;
+}
+
+header img{
+    height:50px;
+}
+
+#contactos{
+    display: flex ;
+    justify-content:space-between ;
+    flex-direction: row ;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+ul li a{
+    text-decoration:none;
+    color: white;
+    padding-left: 10px;
+}
+
+h1, h3{
+    text-align: center;
+    color: gray;
+}
+
+.imgHeader{
+    height:100px;
+    width: 50%;
+}
+
+form{
+    border: 1px solid blue;
+    border-radius: 5px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.caracteristicas{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+.botonera{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+
+#tabla{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+}
+
+#btnEliminar{
+    display: none;
+}
+
+#contenedor{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+
+footer{
+    height: 50px;
+    background-color:blue;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Recuperatorio Primer Parcial Claudia Jara</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contenedor">
+        <h1>Administracion</h1>
+        <img class="imgHeader" src="./assets/LogoHeader.png" alt="Autos">
+
+        <div id="formulario">
+            <form action="/">
+                <input type="hidden" name="id">
+                <label for="titulo">t&iacutetulo: </label>
+                <input type="text" name="titulo" id="titulo"  placeholder="Titulo" required>
+                <!-- <label for="transaccion">transacci&oacuten: </label>
+                <select name="transaccion" id="transaccion">
+                    <option disabled selected>---Elegir una transaccion---</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select> -->
+                <fieldset>
+                    <legend>transacci&oacuten</legend>
+                    <input type="checkbox" name="transaccion" value="Venta">Venta
+                    <input type="checkbox" name="transaccion" value="Alquiler">Alquiler
+                    <input type="checkbox" name="transaccion" value="Permuta">Permuta
+                </fieldset>
+                <label for="descripcion">descripci&oacuten: </label>
+                <input type="text" name="descripcion" id="descripcion"  placeholder="Descripcion" required>
+                <label for="precio">precio: </label>
+                <input type="number" name="precio" id="precio"  placeholder="Precio" required>
+                <div class="caracteristicas">
+                    <label for="puertas">n&uacutemero puertas: </label>
+                    <input type="number" name="puertas" id="puertas"  placeholder="Numero de puertas" required>
+                    <label for="km">n&uacutemero km: </label>
+                    <input type="number" name="km" id="km"  placeholder="Kilometraje" required>
+                    <label for="potencia">n&uacutemero potencia: </label>
+                    <input type="number" name="potencia" id="potencia"  placeholder="Potencia" required>
+                </div>
+                <div class="botonera">
+                    <button id="btnFormulario"><img
+                            src="https://img.icons8.com/small/16/000000/plus.png" />Agregar</button>
+                    <button id="btnEliminar">Eliminar</button>
+                </div>
+            </form>
+        </div>
+        <div id="tabla">
+            <div id="mensajeInformativo"></div>
+            <div id="espinner">
+                <img src="./assets/Rocket.gif" alt="Cargando...">
+            </div>
+            <div id=filtros>
+                <h3>Filtros a Aplicar:</h3>
+                <label for="filtro">tipo transaccion: </label>
+                <select name="filtro" id="filtro">
+                    <option value="Todos">Todos</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select>
+                <label for="promedio">promedio precios: </label>
+                <input type="number" disabled name="promedio" id="promedio">
+            </div>
+            <h3>Listado Anuncios Cargados</h3>
+            <div id="tablaAnuncios"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados <date>2021</date> &copy; </p>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
