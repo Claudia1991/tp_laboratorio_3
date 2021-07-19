@@ -1,0 +1,34 @@
+{
+  "anuncios": [
+    {
+      "titulo": "Prueba",
+      "transaccion": "Venta",
+      "descripcion": "Prueba uno",
+      "precio": 1,
+      "potencia": 1,
+      "km": 1,
+      "puertas": 1,
+      "id": 1
+    },
+    {
+      "titulo": "Prueba",
+      "transaccion": "Alquiler",
+      "descripcion": "Prueba",
+      "precio": 1,
+      "potencia": 1,
+      "km": 1,
+      "puertas": 1,
+      "id": 3
+    },
+    {
+      "titulo": "asdfasf",
+      "transaccion": "Permuta",
+      "descripcion": "asdfasdf",
+      "precio": 12,
+      "potencia": 12,
+      "km": 12,
+      "puertas": 12,
+      "id": 4
+    }
+  ]
+}

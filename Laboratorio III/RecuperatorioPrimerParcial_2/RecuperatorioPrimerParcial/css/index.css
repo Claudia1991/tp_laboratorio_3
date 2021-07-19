@@ -1,0 +1,278 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row;
+    background-color: blue;
+}
+
+header img{
+    height:50px;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+ul li a{
+    text-decoration:none;
+    color: white;
+    padding-left: 10px;
+}
+
+h1, h3{
+    text-align: center;
+    color: gray;
+}
+
+.imgHeader{
+    height:100px;
+    width: 50%;
+}
+
+#espinner{
+    display: none;
+}
+
+form{
+    border: 1px solid blue;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+input, label, select, fieldset{
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+button{
+    margin: 10px;
+    width:150px;
+    background-color: rgb(76, 39, 180);
+    color: white;
+    border: 1px solid rgb(22, 4, 85);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.caracteristicas{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+.botonera{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 1px solid blue;
+    text-align: center;
+    cursor: pointer;
+}
+
+table tr td{
+    padding: 5px;
+}
+
+table th{
+    padding: 5px;
+}
+
+thead{
+    background-color: gray;
+    opacity: 0.5;
+}
+
+#tabla{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#btnEliminar{
+    display: none;
+}
+
+#contenedor{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+footer{
+    height: 50px;
+    background-color:blue;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+}
+
+#mensajeInformativo{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+    visibility: hidden;
+    height: 100px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#mensajeInformativo p{
+    padding: 5px;
+    color: green;
+    font-size:20;
+    background-color: red;
+}
+
+#imagenPreview{
+    visibility: hidden;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+
+/** Media queries*/
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 8px;
+    }
+    #tabla{
+        width: 90%;
+    }
+    button{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        width:80px;
+        padding: 6px 10px;
+        font-size:8px
+    }
+    footer{
+        height: 30px;
+        width: 100%;
+    }
+    .botonera{
+        justify-content:space-between;
+        flex-direction:column;
+        align-items:center;
+    }
+    .caracteristicas{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+    header img{
+        height:30px;
+    }
+    table, tr, td, th{
+        border-color: red;
+    }
+    table tr td{
+        padding: 1px;
+    }
+    
+    table th{
+        padding: 1px;
+    }
+    thead{
+        background-color: rgb(138, 74, 74);
+        opacity: 0.5;
+    }
+    input, label, select{
+        border-radius: 1px;
+        margin-top: 6px;
+        margin-left:6px;
+        margin-right: 6px;
+    }
+    .imgHeader{
+        display:none;
+    }
+}
+
+  @media only screen and (min-width: 600px) and (max-width: 800px) {
+    *{
+        font-size: 12px;
+    }
+    #tabla{
+        width: 95%;
+    }
+    button{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width:100px;
+        padding: 8px 15px;
+        font-size:10px
+    }
+    footer{
+        height: 35px;
+        width: 100%;
+    }
+    .botonera{
+        justify-content:space-around;
+        flex-direction:column;
+        align-items: center;
+    }
+    .caracteristicas{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+    header img{
+        height:40px;
+    }
+    table, tr, td, th{
+        border-color: green;
+    }
+    table tr:nth-child(odd) td {
+        background-color: rgba(0, 128, 128, 0.74);
+    }
+    table tr td{
+        padding: 3px;
+    }
+    
+    table th{
+        padding: 3px;
+    }
+    thead{
+        background-color: rgb(81, 175, 81);
+        opacity: 0.5;
+    }
+    input, label, select{
+        border-radius: 3px;
+        margin-top: 8px;
+        margin-left:8px;
+        margin-right: 8px;
+    }
+    .imgHeader{
+        display:none;
+    }
+}

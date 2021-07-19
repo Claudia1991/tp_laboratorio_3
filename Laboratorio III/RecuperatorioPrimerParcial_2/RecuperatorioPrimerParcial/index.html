@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recuperatorio Primer Parcial Claudia Jara</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contenedor">
+        <h1>Administracion</h1>
+        <img class="imgHeader" src="./assets/LogoHeader.png" alt="Autos">
+
+        <div id="formulario">
+            <form method="POST">
+                <input type="hidden" name="id">
+                <label for="titulo">t&iacutetulo: </label>
+                <input type="text" name="titulo" id="titulo"  placeholder="Titulo" required>
+                <!-- <label for="transaccion">transacci&oacuten: </label>
+                <select name="transaccion" id="transaccion">
+                    <option disabled selected>---Elegir una transaccion---</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select> -->
+                <fieldset>
+                    <legend>transacci&oacuten</legend>
+                    <input type="checkbox" name="transaccion" value="Venta" >Venta
+                    <input type="checkbox" name="transaccion" value="Alquiler" >Alquiler
+                    <input type="checkbox" name="transaccion" value="Permuta" >Permuta
+                </fieldset>
+                <label for="descripcion">descripci&oacuten: </label>
+                <input type="text" name="descripcion" id="descripcion"  placeholder="Descripcion" required>
+                <label for="precio">precio: </label>
+                <input type="number" name="precio" id="precio"  placeholder="Precio" required min="1">
+                <div class="caracteristicas">
+                    <label for="puertas"> <i class="fa fa-car" aria-hidden="true"></i> n&uacutemero puertas: </label>
+                    <input type="number" name="puertas" id="puertas"  placeholder="Numero de puertas" required>
+                    <label for="km"> <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i> n&uacutemero km: </label>
+                    <input type="number" name="km" id="km"  placeholder="Kilometraje" required>
+                    <label for="potencia"> <i class="fa fa-bar-chart" aria-hidden="true"></i> n&uacutemero potencia: </label>
+                    <input type="number" name="potencia" id="potencia"  placeholder="Potencia" required>
+                </div>
+                <!-- TODO -->
+                <input type="file" name="fotoAnuncio" id="fotoAnuncio"/>
+                <div>
+                    <img id="imagenPreview" src="" alt="imagenAnuncio">
+                </div>
+                <div class="botonera">
+                    <button id="btnFormulario"><i class="fa fa-floppy-o" aria-hidden="true"></i> <p>Agregar</p></button>
+                    <button id="btnEliminar"><i class="fa fa-trash-o"></i> <p>Eliminar</p></button>
+                </div>
+            </form>
+        </div>
+        <div id="tabla">
+            <div id="espinner">
+                <img src="./assets/Rocket.gif" alt="Cargando...">
+            </div>
+            <div id=filtros>
+                <h3>Filtros a Aplicar:</h3>
+                <label for="filtro">tipo transaccion: </label>
+                <select name="filtro" id="filtro">
+                    <option value="Todos">Todos</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                </select>
+                <label for="promedio">promedio precios: </label>
+                <input type="number" disabled name="promedio" id="promedio">
+            </div>
+            <h3>Listado Anuncios Cargados</h3>
+            <div id="tablaAnuncios"></div>
+        </div>
+        <div id="mensajeInformativo">
+            <button id="btnCerrarMensajeInformativo"><i class="fa fa-times-circle" aria-hidden="true"></i> Cerrar</button>    
+        </div>
+    </div>
+
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 48.1481%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEkGZddE5Y&#x2F;view?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEkGZddE5Y&#x2F;view?utm_content=DAEkGZddE5Y&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Rosa Maquillista Profesional &#x2F; Estilista Carpeta de Trabajos Sitio Web</a> de sandrajarac
+
+    <footer>
+        <p>Todos los derechos reservados <date>2021</date> &copy; </p>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
